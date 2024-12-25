@@ -1,34 +1,27 @@
-<! DOCTYPE html>
-‹html lang="en">
-< head>
-‹meta charset="UTF-8",
-‹meta name="viewport" content="width=device-width, initial-scale=1.0"› < link rel="icon" href="./icons8-web-64.png">
-‹title>Document</title>
-‹style>
-•btn{
-border: blue solid 2px;
-color:
-blue;
-border-radius: 20px; padding: 8px 16px;
-background-color: transparent;
-•btn: hover{
-background-color: color:
-white;
-box-shadow: 10px
-blue;
-10px
-10px
-rgba (0,0,0,0.5) ;
-I
-‹button class="btn" >hello world</button>
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons8-web-64.png">
+    <title>Document</title>
+    <style>
+        .btn {
+            border: 2px solid blue;
+            color: blue;
+            border-radius: 20px;
+            padding: 8px 16px;
+            background-color: transparent;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
 
+        .btn:hover {
+            background-color: white;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
-
-< body>
-
-
-
+<body>
+    <button class="btn">Hello World</button>
 </body>
-
-</html >
+</html>
