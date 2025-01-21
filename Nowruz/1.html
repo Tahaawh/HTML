@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شاعران ایرانی</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "IranNastaliq", sans-serif;
+    }
+
+    .background {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2fr;
+      color: white;
+      margin-bottom: 1fr;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5fr;
+    }
+
+    .card {
+      background-color: rgba(50, 50, 50, 0.3);
+      padding: 1fr;
+      box-shadow: 5px 5px 15px white;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      margin-bottom: 0.5fr;
+    }
+
+    .card h2 {
+      font-size: 1.5fr;
+      margin: 0.5fr 0;
+      color: white;
+    }
+
+    .card p {
+      color: white;
+      font-size: 1fr;
+      line-height: 1.6;
+      direction: rtl;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <h1>شاعران ایرانی</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="saadi.jpg" alt="سعدی">
+        <h2>سعدی</h2>
+        <p>به راه بادیه رفتن به از نشستن باطل<br> که گر مراد نیابم به قدر وسع بکوشم</p>
+      </div>
+      <div class="card">
+        <img src="hafez.jpg" alt="حافظ">
+        <h2>حافظ</h2>
+        <p>دلا معاش چنان کن که گر بلغزد پای<br> فرشته‌ات به دو دست دعا نگه دارد</p>
+      </div>
+      <div class="card">
+        <img src="ferdowsi.jpg" alt="فردوسی">
+        <h2>فردوسی</h2>
+        <p>توانا بود هر که دانا بود<br> ز دانش دل پیر برنا بود</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
